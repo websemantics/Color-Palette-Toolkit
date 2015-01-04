@@ -8,6 +8,8 @@ https://github.com/jasonm23/photoshop-aco2UIColors
 * Generates human names for each color
 * Generates lighter and darker shades for each if required
 
+[Live Demo](http://websemantics.github.io/Color-Palette-Toolkit)
+
 ## License
 Instant Sprite is open source under MIT License.  See LICENSE.
 
