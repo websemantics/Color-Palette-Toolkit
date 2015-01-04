@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Color-palette-toolkit : A lightweight Javascript library that reads the color values from a PhotoShop ACO file or an Image and turns them into a list of named colors using FileReader interface (http://bgrins.github.com/filereader.js/) and few other great Open Source projects. The Javascript code responsible of reading Photoshop ACO files has been ported from C program https://github.com/jasonm23/photoshop-aco2UIColors">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+    <title>Color Palette Toolkit : WebSemantics</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css">
+
+    <link rel="stylesheet" href="css/codemirror.css">
+    
+    <script type='text/javascript' src='src/aco2html.js'></script>
+    <script type='text/javascript' src='lib/color-thief.js'></script>
+    <script type='text/javascript' src='lib/jsbeautify/beautify.js'></script>
+    <script type='text/javascript' src='lib/jsbeautify/beautify-html.js'></script>
+    <script type='text/javascript' src='lib/jsbeautify/beautify-css.js'></script>
+    <script type='text/javascript' src='lib/codemirror.js'></script>
+    <script type='text/javascript' src='lib/css.js'></script>
+    <script type='text/javascript' src='lib/template.js'></script>
+    <script type='text/javascript' src='lib/inflection.js'></script>
+    <script type='text/javascript' src='lib/filereader.js'></script>
+    <script type='text/javascript' src='lib/ntc.js'></script>
+    <script type='text/javascript' src='lib/tinycolor.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/websemantics/Color-Palette-Toolkit">View on GitHub</a>
+
+          <h1 id="project_title">Color Palette Toolkit</h1>
+          <h2 id="project_tagline">A lightweight Javascript library that reads the color values from a PhotoShop ACO file or an Image and turns them into a list of named colors.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/websemantics/Color-Palette-Toolkit/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/websemantics/Color-Palette-Toolkit/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+
+        <h3>
+        <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>How To Use</h3>
+
+        <p>Load the ACO / Image file from your local drive and get a list of the Palette Colors as CSS HEX colors. HTML code will also be generated and a human name given to each color.</p>
+
+
+        <div>
+          <form id='file-form' method="post" enctype="multipart/form-data">
+            <div>
+            <small><a style="float:right" href='#' id='clear-list'>clear</a></small>
+            <label>Source:</label>
+            <select id="source">
+              <option value="aco-file-input" selected="selected">Photoshop ACO</option>
+              <option value="image-file-input">Image</option>
+            </select>
+            &nbsp;&nbsp;
+            <label>Mode:</label>
+            <select id="shades">
+              <option value="1" selected="selected">Single color</option>
+              <option value="2">One light shade</option>
+              <option value="3">One dark shade</option>
+              <option value="4">Two shades</option>
+            </select>
+            &nbsp;&nbsp;
+            <label>Shade Factor:</label>
+            <select id="shade_factor">
+              <option value="1">1</option>
+              <option value="5" selected="selected">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+              <option value="25">25</option>
+              <option value="30">30</option>
+              <option value="35">35</option>
+              <option value="40">40</option>
+              <option value="45">45</option>
+              <option value="50">50</option>
+            </select>
+            </div>
+            <p>
+            <input type="hidden" name="extra-data" multiple />
+            <input type="file" id="aco-file-input" name="aco-file-input"/>
+            <input type="file" id="image-file-input" name="image-file-input"  class="hidden"/>
+            </p>
+            <div id='image'></div>
+          </form>
+
+          <div id='result'>
+            
+          </div>
+
+        </div>
+
+      <h3>
+      <br>
+      <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+      <p>Having trouble with Pages? Contact <a href="mailto:adnan@websemantics.ca">adnan@websemantics.ca</a> and we’ll help you sort it out.</p>
+            </section>
+          </div>
+
+          <!-- FOOTER  -->
+          <div id="footer_wrap" class="outer">
+            <footer class="inner">
+              <p class="copyright">Color Palette Toolkit maintained by <a href="https://github.com/websemantics">websemantics</a></p>
+              <p><a href="http://websemantics.ca">
+                <img src="http://websemantics.ca/wp-content/uploads/2015/01/ws-new-logowhite-160x35@2x.png" alt="Web Semantics" style="width:160px;max-height:35px; height: auto !important" class="retina_logo">
+                        </a></p>
+            </footer>
+          </div>
+
+          <script type='text/javascript' src='src/index.js'></script>
+
+         <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-58118474-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+
+
+  </body>
+</html>
