@@ -47,7 +47,7 @@
 
     body {
       font-family: 'Roboto', sans-serif;
-      background-color: #F0F2F5;
+      background-color: #ffffff;
     }
 
     section.container {
@@ -85,6 +85,15 @@
       padding:0px 15px;
       margin-bottom: 10px;
     }
+
+    div.result {
+      border-radius: 5px;
+      background-color: red;
+      padding:0px 15px;
+      margin-bottom: 10px;
+    }
+
+
 
     p, form {
       padding : 10px 0px;
