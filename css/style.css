@@ -1,0 +1,141 @@
+/* http://codepen.io/anon/pen/bNBooM */
+    @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,500,500italic,700,700italic,900,900italic,100italic);
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+    body {
+      line-height: 1;
+    }
+    ol, ul {
+      list-style: none;
+    }
+    blockquote, q {
+      quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+      content: '';
+      content: none;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #F0F2F5;
+    }
+
+    section.container {
+      width: 800px;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .container header {
+      margin: 25px 0;
+      padding-bottom: 25px;
+      border-bottom: 1px dotted #AAB2BD;
+    }
+
+    .container header h1{
+      font-weight: 200;
+      font-size: 3em;
+      color: #656D78;
+      text-align: center;
+    }
+
+    .container h2{
+      font-weight: 200;
+      font-size: 2em;
+      color: #656D78;
+    }
+
+    /* Custom page CSS
+    -------------------------------------------------- */
+    /* Not required for template or sticky footer method. */
+
+    div.panel {
+      border-radius: 5px;
+      background-color: rgba(0,0,0,0.1);
+      padding:0px 15px;
+      margin-bottom: 10px;
+    }
+
+    p, form {
+      padding : 10px 0px;
+      font-weight: 300;
+      font-size: 1em;
+    }
+
+    .footer {
+      clear: both;
+      position: relative;
+      z-index: 10;
+      height: 3em;
+      margin-top: 3em;
+      padding-top:10px;
+      width: 100%;
+      /* Set the fixed height of the footer here */
+      height: 60px;
+    }
+        
+    .CodeMirror {
+      border: 1px solid #cecfd5;
+      border-radius: 4px;
+      padding:10px;
+      background-color: #ffffff
+    }
+
+    a {
+    }
+    a:link {
+        color: #1982d1;
+        text-decoration: none;
+    }
+     
+    a:active {
+        color: #B73045;
+        text-decoration: none;
+    }
+     
+    a:visited {
+        color: #1982d1;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #B73045;
+        text-decoration: none;
+    }
+
+    .hidden {
+      display: none;
+    }
+    
+    #image img{
+      width:150px;
+    }

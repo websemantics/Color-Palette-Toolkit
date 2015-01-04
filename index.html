@@ -1,0 +1,103 @@
+<html>
+  <head>
+   <link rel="stylesheet" href="css/codemirror.css">
+   <link rel="stylesheet" href="css/style.css">
+
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    
+    <script type='text/javascript' src='src/aco2html.js'></script>
+    <script type='text/javascript' src='lib/color-thief.js'></script>
+    <script type='text/javascript' src='lib/jsbeautify/beautify.js'></script>
+    <script type='text/javascript' src='lib/jsbeautify/beautify-html.js'></script>
+    <script type='text/javascript' src='lib/jsbeautify/beautify-css.js'></script>
+    <script type='text/javascript' src='lib/codemirror.js'></script>
+    <script type='text/javascript' src='lib/css.js'></script>
+    <script type='text/javascript' src='lib/template.js'></script>
+    <script type='text/javascript' src='lib/inflection.js'></script>
+    <script type='text/javascript' src='lib/filereader.js'></script>
+    <script type='text/javascript' src='lib/ntc.js'></script>
+    <script type='text/javascript' src='lib/tinycolor.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  </head>
+  <body>
+  <section class="container">
+      
+    <header>
+      <h1>Color Palette Toolkit</h1>
+    </header>
+ 
+    <div class="panel">
+      <p class="lead">Load the ACO / Image file from your local drive and get a list of the Palette Colors as CSS HEX colors. HTML code will also be generated and a human name given to each color.</p>
+
+          <form id='file-form' method="post" enctype="multipart/form-data">
+            <div>
+            <small><a style="float:right" href='#' id='clear-list'>clear</a></small>
+            <label>Source:</label>
+            <select id="source">
+              <option value="aco-file-input" selected="selected">Photoshop ACO</option>
+              <option value="image-file-input">Image</option>
+            </select>
+            &nbsp;&nbsp;
+            <label>Mode:</label>
+            <select id="shades">
+              <option value="1" selected="selected">Single color</option>
+              <option value="2">One light shade</option>
+              <option value="3">One dark shade</option>
+              <option value="4">Two shades</option>
+            </select>
+            &nbsp;&nbsp;
+            <label>Shade Factor:</label>
+            <select id="shade_factor">
+              <option value="1">1</option>
+              <option value="5" selected="selected">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+              <option value="25">25</option>
+              <option value="30">30</option>
+              <option value="35">35</option>
+              <option value="40">40</option>
+              <option value="45">45</option>
+              <option value="50">50</option>
+            </select>
+            </div>
+            <p>
+            <input type="hidden" name="extra-data" multiple />
+            <input type="file" id="aco-file-input" name="aco-file-input"/>
+            <input type="file" id="image-file-input" name="image-file-input"  class="hidden"/>
+            </p>
+            <div id='image'></div>
+          </form>
+          </div>
+
+          <div id='result'>
+            
+          </div>
+
+      </div>
+      <br>
+    </section>
+    <div style="min-height:100%"></div>
+    <footer class="footer">
+      <section class="container">
+        <hr>
+        <p class="text-muted">Copyright (c) 2015, <a href="http://websemantics.ca">WebSemantics, Inc.</a></p>
+      </section>
+    </footer>
+
+    <script type='text/javascript' src='src/index.js'></script>
+
+   <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-58118474-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  </body>
+
+</html>
