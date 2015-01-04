@@ -42,3 +42,4 @@ Instant Sprite is open source under MIT License.  See LICENSE.
 * Flattastic Pro Color Palette - http://codepen.io/devi8/pen/lvIeh (https://dribbble.com/devi8) 
 * Flattastic Pro Color Palette - https://dribbble.com/shots/1186718-Flattastic-Pro-Color-Palette
 * Color Thief - https://github.com/lokesh/color-thief
+* photoshop-aco2UIColors - https://github.com/jasonm23/photoshop-aco2UIColors
