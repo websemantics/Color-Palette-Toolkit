@@ -3,14 +3,29 @@
 A lightweight Javascript library that reads the color values from a PhotoShop ACO file or an Image and turns them into a list of named colors using FileReader interface (http://bgrins.github.com/filereader.js/) and few other great Open Source projects. The Javascript code responsible of reading Photoshop ACO files has been ported from C program 
 https://github.com/jasonm23/photoshop-aco2UIColors
  
+Try it in the [Live Demo](http://websemantics.github.io/Color-Palette-Toolkit)
+
 * Extract Color Pallete from Photoshop ACO file or an Image
 * Generate CSS and HTML code for each color
 * Generates human names for each color
 * Generates lighter and darker shades for each if required
 
-Try it in the [Live Demo](http://websemantics.github.io/Color-Palette-Toolkit)
+Get the color pallete from Adobe Photoshop ACO file
 
-![alt text](https://raw.githubusercontent.com/websemantics/Color-Palette-Toolkit/master/img/sample.png "Color Palette Toolkit")
+![alt text](https://raw.githubusercontent.com/websemantics/Color-Palette-Toolkit/master/img/one.png "Color Palette")
+
+Generate an extra 'lighter' or 'darker' color of each
+
+![alt text](https://raw.githubusercontent.com/websemantics/Color-Palette-Toolkit/master/img/two.png "Color Palette")
+
+Generate an extra 'lighter' and 'darker' color of each
+
+![alt text](https://raw.githubusercontent.com/websemantics/Color-Palette-Toolkit/master/img/three.png "Color Palette")
+
+Get the color pallete from an Image file
+
+![alt text](https://raw.githubusercontent.com/websemantics/Color-Palette-Toolkit/master/img/image.png "Color Palette")
+
 
 ## License
 Instant Sprite is open source under MIT License.  See LICENSE.
