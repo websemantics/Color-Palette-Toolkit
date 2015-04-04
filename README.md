@@ -28,7 +28,7 @@ Get the color pallete from an Image file
 
 
 ## License
-Instant Sprite is open source under MIT License.  See LICENSE.
+Color-Palette-Toolkit is open source under MIT License.  See LICENSE.
 
 ## Open Source projects used
 * jQuery - http://jquery.com/
