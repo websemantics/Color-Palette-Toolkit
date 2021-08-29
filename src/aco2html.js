@@ -179,7 +179,7 @@ var Aco = (function() {
 
                 if (rgb == null) continue;
 
-                aco.color[j] = rgb;
+                aco.color.push(rgb);
 
             }
             return aco;
